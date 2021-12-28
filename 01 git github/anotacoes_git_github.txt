@@ -1,2 +1,19 @@
 guia para esrever o arquivo readme.md
 https://www.markdownguide.org/basic-syntax/
+
+comandos GIT
+
+para trazer o repositório da hospedagem para a máquina local.
+git clone <link do repositorio>
+
+para avaliar a sincronia entre as duas partes
+git status 
+
+mapeia todos os novo arquivo da máquina física para versionamento com a hospedagem
+git add . ou git add -A
+
+mapear as alterações a serem enviadas para a hospedagem
+git commit -m <"comentário">
+
+envia todos os commits da maquina local para a hospedagem
+git push origin main
