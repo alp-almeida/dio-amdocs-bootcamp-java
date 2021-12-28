@@ -1,0 +1,2 @@
+guia para esrever o arquivo readme.md
+https://www.markdownguide.org/basic-syntax/
