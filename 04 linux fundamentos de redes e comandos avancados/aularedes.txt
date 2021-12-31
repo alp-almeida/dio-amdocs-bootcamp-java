@@ -1,0 +1,81 @@
+192.168.0.26 2804:14c:3d82:83e4::5 2804:14c:3d82:83e4:f887:c845:c31e:bac4 2804:14c:3d82:83e4:4286:a059:5363:a4ec 
+127.0.1.1
+
+; <<>> DiG 9.16.1-Ubuntu <<>> www.pudim.com.br
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44235
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;www.pudim.com.br.		IN	A
+
+;; ANSWER SECTION:
+www.pudim.com.br.	3600	IN	CNAME	pudim.com.br.
+pudim.com.br.		3599	IN	A	54.207.20.104
+
+;; Query time: 136 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53)
+;; WHEN: Thu Dec 30 20:41:23 -03 2021
+;; MSG SIZE  rcvd: 75
+
+andre    :0           2021-12-30 20:14 (:0)
+PING pudim.com.br (54.207.20.104) 56(84) bytes of data.
+
+--- pudim.com.br estatísticas de ping ---
+6 pacotes transmitidos, 0 recebidos, 100% perda de pacote, tempo 5120ms
+
+traceroute to www.pudim.com.br (54.207.20.104), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.0.1)  5.697 ms  7.550 ms  7.282 ms
+ 2  b1235801.virtua.com.br (177.35.88.1)  21.674 ms  21.592 ms  21.242 ms
+ 3  bb02c869.virtua.com.br (187.2.200.105)  14.787 ms  17.477 ms  17.217 ms
+ 4  embratel-T0-1-0-1-uacc01.bhe.embratel.net.br (201.72.64.21)  31.320 ms  31.837 ms embratel-G1-3-0-iacc02.rpo.embratel.net.br (200.231.137.21)  26.089 ms
+ 5  ebt-H0-4-0-0-agg04.spo.embratel.net.br (200.230.242.202)  31.112 ms 200.230.235.255 (200.230.235.255)  26.091 ms ebt-H0-4-0-0-agg04.spo.embratel.net.br (200.230.242.202)  30.822 ms
+ 6  99.83.90.186 (99.83.90.186)  29.953 ms  27.742 ms 200.230.235.197 (200.230.235.197)  22.514 ms
+ 7  * * *
+ 8  ebt-B1902-tcore01.spomb.embratel.net.br (200.230.243.58)  32.562 ms  32.778 ms *
+ 9  ebt-H0-4-0-0-agg04.spo.embratel.net.br (200.230.242.202)  25.662 ms * *
+10  54.240.244.153 (54.240.244.153)  31.968 ms 99.83.90.186 (99.83.90.186)  25.363 ms 54.240.244.137 (54.240.244.137)  31.463 ms
+11  177.72.240.253 (177.72.240.253)  32.017 ms *  31.930 ms
+12  * * *
+13  * * *
+14  54.240.244.153 (54.240.244.153)  27.687 ms * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.26  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 2804:14c:3d82:83e4:f887:c845:c31e:bac4  prefixlen 64  scopeid 0x0<global>
+        inet6 2804:14c:3d82:83e4::5  prefixlen 128  scopeid 0x0<global>
+        inet6 2804:14c:3d82:83e4:4286:a059:5363:a4ec  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::3b4c:a098:52c1:d2dc  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:4e:07:72  txqueuelen 1000  (Ethernet)
+        RX packets 8581  bytes 8257696 (8.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5518  bytes 692976 (692.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Loopback Local)
+        RX packets 915  bytes 96396 (96.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 915  bytes 96396 (96.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
