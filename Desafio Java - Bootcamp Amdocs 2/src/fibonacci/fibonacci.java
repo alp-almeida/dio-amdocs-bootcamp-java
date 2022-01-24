@@ -17,7 +17,9 @@ public class fibonacci {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int entrada = 19;
-        System.out.println(fibo((double) entrada));
+        int entrada = sc.nextInt();
+        double resultado = fibo((double) entrada);
+        String saida = String.format("%.1f",resultado);
+        System.out.println(saida);
     }
 }

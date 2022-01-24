@@ -7,7 +7,7 @@ public class fatorial {
 
         //complete o código com sua solução
         Scanner sc = new Scanner(System.in);
-        int entrada = 4;
+        int entrada = 4; // saida 24
         entrada = sc.nextInt();
         int cont = entrada;
         int valor = 1;

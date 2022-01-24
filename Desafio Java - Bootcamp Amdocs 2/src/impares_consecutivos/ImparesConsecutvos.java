@@ -1,18 +1,15 @@
 package impares_consecutivos;
 
+import java.util.Scanner;
+
 public class ImparesConsecutvos {
 
-    public static boolean eImpar(int num){
-        return (num % 2 != 0);
-    }
-
     public static void main(String[] args) {
-        int a = 12;
-        int b = 12;
-
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
         int min = Math.min ( a , b)+1;
         int max = Math.max ( a , b);
-
         int valor = 0;
 
         while(min != max){
@@ -21,9 +18,6 @@ public class ImparesConsecutvos {
             }
             min++;
         }
-
         System.out.println(valor);
-
     }
-    // fim da classe
 }
